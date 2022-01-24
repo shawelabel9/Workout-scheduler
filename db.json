@@ -1,0 +1,22 @@
+{
+  "workouts": [
+    {
+      "text": "upper body workout",
+      "day": "Monday, January 31st, 2022",
+      "reminder": false,
+      "id": 1
+    },
+    {
+      "text": "lower body ",
+      "day": "Tuesday, February 1st, 2022",
+      "reminder": true,
+      "id": 2
+    },
+    {
+      "text": "chest and back",
+      "day": "Wednesday, February 2nd, 2022",
+      "reminder": false,
+      "id": 3
+    }
+  ]
+}
