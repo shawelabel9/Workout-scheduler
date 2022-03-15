@@ -1,7 +1,8 @@
 import Button from './Button'
 import {useLocation} from 'react-router-dom'
 const Header = ({add, addTask}) => {
-    const location = useLocation()
+    const location = useLocation() 
+
     return (
         <div className="header">
            <header >

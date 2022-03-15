@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import AddTask from './AddTask'
 import Footer from './Footer'
 import About from './About'
+import WorkoutDetails from './WorkoutDetails'
 
 function App() {
     const [addTask,setAddTask] = useState(false)
@@ -19,6 +20,7 @@ function App() {
             setTasks(data)
         }
         fetchData()
+        
     },[])
 
     const handleIcon = async (index) => {
@@ -46,7 +48,7 @@ function App() {
             body: JSON.stringify(updWorkout)
         })
         const data = await res.json()
-
+        
         setTasks(tasks.map((task)=>task.id===index? {...task,reminder: data.reminder }:task))
     }
     const handleSubmit= async (workout)=> {
@@ -90,7 +92,11 @@ function App() {
                 <Footer/>
                 </div>
                 }></Route>
+                <Route path='/workout/:id' element={<div className="details"><WorkoutDetails/> <Footer/></div>}>
+                
+            </Route>
             </Routes>
+            
         </Router>
         )
     }

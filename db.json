@@ -3,7 +3,7 @@
     {
       "text": "upper body workout",
       "day": "Monday, January 31st, 2022",
-      "reminder": false,
+      "reminder": true,
       "id": 1
     },
     {

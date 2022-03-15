@@ -110,3 +110,13 @@ body {
   margin-top: 30px;
   text-align: center;
 }
+
+.details{
+  border: 1px solid blue;
+  overflow:auto;
+  background: beige;
+  max-width: 300px;
+  min-height: 130px;
+  margin: 50px auto 0px auto;
+  padding:10px;
+}
