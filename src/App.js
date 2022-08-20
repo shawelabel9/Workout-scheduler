@@ -92,7 +92,7 @@ function App() {
                 <Footer/>
                 </div>
                 }></Route>
-                <Route path='/workout/:id' element={<div className="details"><WorkoutDetails/> <Footer/></div>}>
+                <Route path='/workout/:id' element={<div className="details"><><WorkoutDetails/> <h3>hello</h3></><Footer/></div>}>
                 
             </Route>
             </Routes>
